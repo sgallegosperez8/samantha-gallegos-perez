@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samantha Gallegos Perez | Bioinformatics & Data Science</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        bioWarmBg: '#fefcbf', /* Light yellow background */
+                        bioCardBg: '#ffffff',  /* Clean white for section cards */
+                        bioTextDark: '#1a202c', /* Deep charcoal for text */
+                        bioAccent: '#2b6cb0',   /* Professional blue for highlights */
+                        bioTeal: '#319795',     /* Teal for accents */
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-bioWarmBg text-bioTextDark font-sans leading-relaxed tracking-wide selection:bg-bioAccent selection:text-white">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-bioWarmBg/90 backdrop-blur-md border-b border-yellow-200 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider text-bioAccent">SGP.BIO</a>
+            <nav class="hidden md:flex space-x-6 text-sm font-semibold text-gray-600">
+                <a href="#about" class="hover:text-bioAccent transition">About</a>
+                <a href="#skills" class="hover:text-bioAccent transition">Skills</a>
+                <a href="#experience" class="hover:text-bioAccent transition">Experience</a>
+                <a href="#projects" class="hover:text-bioAccent transition">Projects</a>
+                <a href="#contact" class="hover:text-bioAccent transition">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="about" class="max-w-5xl mx-auto px-6 pt-10 pb-10 flex items-center">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center w-full">
+            
+            <!-- Left Side: Content -->
+            <div class="md:col-span-2 order-2 md:order-1">
+                <p class="text-bioTeal font-mono text-sm mb-1 tracking-widest font-bold">HI, MY NAME IS</p>
+                <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight mb-2">Samantha Gallegos Perez</h1>
+                <h2 class="text-2xl md:text-2xl font-bold text-gray-700 mb-4">Bridging Wet-Lab Realities with Computational Insights.</h2>
+                <p class="text-gray-700 text-base mb-6 leading-relaxed">
+                    I am a <strong class="text-bioAccent">Bioinformatics Graduate Assistant</strong> and MS candidate based in San Diego[cite: 1]. My expertise spans data science pipelines, genomics workflows, and translational immunology—specializing in transforming high-dimensional biological datasets into actionable data-driven discoveries[cite: 1].
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#projects" class="px-5 py-2.5 bg-bioAccent text-white font-bold rounded hover:bg-blue-800 transition shadow-md text-sm">View My Work</a>
+                    <a href="mailto:samanthagallegos814@gmail.com" class="px-5 py-2.5 border border-gray-400 hover:border-bioAccent hover:text-bioAccent rounded bg-white font-medium flex items-center gap-2 transition text-sm">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"></path></svg>
+                        samanthagallegos.com
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: Profile Image -->
+            <div class="md:col-span-1 order-1 md:order-2 flex justify-center">
+                <div class="relative group w-48 h-48 md:w-56 md:h-auto max-w-[240px] aspect-[3/4] rounded-xl overflow-hidden shadow-md border-4 border-white transition-transform duration-300 hover:scale-105">
+                    <img src="IMG_5708.jpg" alt="Samantha Gallegos Perez" class="w-full h-full object-cover">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Technical Stack Section -->
+    <section id="skills" class="bg-yellow-100/60 py-10 border-y border-yellow-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Technical Stack</h2>
+                <div class="h-[1px] bg-yellow-300 flex-grow"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="bg-bioCardBg p-4 rounded-xl shadow-sm border border-yellow-200/50">
+                    <h3 class="text-bioTeal font-mono text-xs mb-2 uppercase tracking-wider font-bold">Programming & Workflows</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">Python (NumPy, Pandas, Biopython, Scikit-Learn, Seaborn), R (car, ggplot2, dplyr, tidyr, randomForest), mySQL, Jupyter Notebooks, Bash/Shell scripting, CLI, Snakemake, HPC, Git[cite: 1].</p>
+                </div>
+                <div class="bg-bioCardBg p-4 rounded-xl shadow-sm border border-yellow-200/50">
+                    <h3 class="text-bioAccent font-mono text-xs mb-2 uppercase tracking-wider font-bold">Genomics Software</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">Bowtie, bwa-mem2, fastqc, QUAST, trimmomatic, GATK, Bcftools, Samtools, VCFtools, DESeq2, Qiime2, Velvet, RxMF, plink2, multiclust[cite: 1].</p>
+                </div>
+                <div class="bg-bioCardBg p-4 rounded-xl shadow-sm border border-yellow-200/50">
+                    <h3 class="text-bioTeal font-mono text-xs mb-2 uppercase tracking-wider font-bold">Biological Databases</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">BLAST, UniProt, Ensembl, KEGG, PROSITE, NCBI Genbank, refseq, SILVA, greengenes[cite: 1].</p>
+                </div>
+                <div class="bg-bioCardBg p-4 rounded-xl shadow-sm border border-yellow-200/50">
+                    <h3 class="text-bioAccent font-mono text-xs mb-2 uppercase tracking-wider font-bold">Wet-Lab Instrumentation</h3>
+                    <p class="text-gray-700 text-sm leading-relaxed">FPLC (ÄKTA Purifier), HPLC, Affinity, SEC, and IEX Chromatography, UV/IR, Gel Electrophoresis, ELISA, Western Blot, Spectroscopy[cite: 1].</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="max-w-5xl mx-auto px-6 py-10">
+        <div class="flex items-center gap-4 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900">Professional Journey</h2>
+            <div class="h-[1px] bg-yellow-300 flex-grow"></div>
+        </div>
+
+        <div class="space-y-8 relative before:absolute before:inset-0 before:left-4 before:w-[2px] before:bg-yellow-300">
+            
+            <!-- Job 1 -->
+            <div class="relative pl-10 group">
+                <div class="absolute left-2 top-2 w-4 h-4 bg-bioTeal rounded-full border-2 border-bioWarmBg group-hover:scale-125 transition"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-bioTeal transition">Computational Biology Intern</h3>
+                    <span class="text-gray-600 text-xs font-mono font-semibold">June 2026 - August 2026[cite: 1]</span>
+                </div>
+                <h4 class="text-bioAccent font-semibold text-sm mb-2">Phage Pathways - Sandia National Laboratories <span class="text-xs text-gray-500 font-normal">| Livermore, CA[cite: 1]</span></h4>
+                <ul class="list-disc list-outside pl-4 text-gray-700 text-sm">
+                    <li>Developed and optimized software to enhance parameter capability for TIGER bioinformatic tool for Genomic Island (GEI) classification[cite: 1].</li>
+                </ul>
+            </div>
+
+            <!-- Job 2 -->
+            <div class="relative pl-10 group">
+                <div class="absolute left-2 top-2 w-4 h-4 bg-bioTeal rounded-full border-2 border-bioWarmBg group-hover:scale-125 transition"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-bioTeal transition">Bioinformatics Graduate Assistant</h3>
+                    <span class="text-gray-600 text-xs font-mono font-semibold">October 2025 - Present[cite: 1]</span>
+                </div>
+                <h4 class="text-bioAccent font-semibold text-sm mb-2">SDSU Research Foundation <span class="text-xs text-gray-500 font-normal">| San Diego, CA[cite: 1]</span></h4>
+                <ul class="list-disc list-outside pl-4 space-y-1 text-gray-700 text-sm">
+                    <li>Integrated 16s marker gene primers and custom barcode sequences into the pipeline architecture to support high-throughput, multiplexed identification of targeted microbial groups[cite: 1].</li>
+                    <li>Utilized Python, R, and the Qiime2 pipeline in an HPC environment to process complex sequences for species classification, diversity analysis, and identification of conserved microbial features[cite: 1].</li>
+                    <li>Developed automated Bash/Python scripts for log parsing and pattern recognition across high-dimensional system datasets[cite: 1].</li>
+                    <li>Feature engineered high-dimensional features and implemented cross-validation to optimize predictive models[cite: 1].</li>
+                    <li>Communicated pipeline progress and analytical insights to collaborative partners to drive data-backed project decisions[cite: 1].</li>
+                    <li>Utilized Git for version control, collaborative development, and establishing standardized workflows[cite: 1].</li>
+                </ul>
+            </div>
+
+            <!-- Job 3 -->
+            <div class="relative pl-10 group">
+                <div class="absolute left-2 top-2 w-4 h-4 bg-gray-400 rounded-full border-2 border-bioWarmBg group-hover:scale-125 transition"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-bioAccent transition">Scientist I (Immunology)</h3>
+                    <span class="text-gray-600 text-xs font-mono font-semibold">July 2022 - June 2025[cite: 1]</span>
+                </div>
+                <h4 class="text-bioAccent font-semibold text-sm mb-2">Beckman Coulter Life Sciences <span class="text-xs text-gray-500 font-normal">| Miami, FL[cite: 1]</span></h4>
+                <ul class="list-disc list-outside pl-4 space-y-1 text-gray-700 text-sm">
+                    <li>Bridged wet-lab realities with product delivery by manufacturing antibody purifications, Mab-Dye conjugations, and blood-related products under strict GMP, FDA, and ISO standards[cite: 1].</li>
+                    <li>Co-led daily production Key Performance Indicator (KPI) meetings and collaborated across cross-functional commercial teams to meet strict product timelines[cite: 1].</li>
+                    <li>Performed analysis and visualizations of large-scale datasets utilizing R[cite: 1].</li>
+                    <li>Collaborated with QA to evaluate protein concentrations (mg/mL) across production batches using ELISA, western blot, and spectroscopy[cite: 1].</li>
+                </ul>
+            </div>
+
+            <!-- Job 4 -->
+            <div class="relative pl-10 group">
+                <div class="absolute left-2 top-2 w-4 h-4 bg-gray-400 rounded-full border-2 border-bioWarmBg group-hover:scale-125 transition"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-baseline mb-1">
+                    <h3 class="text-lg font-bold text-gray-900 group-hover:text-bioAccent transition">Chemistry Associate III</h3>
+                    <span class="text-gray-600 text-xs font-mono font-semibold">October 2019 - July 2022[cite: 1]</span>
+                </div>
+                <h4 class="text-bioAccent font-semibold text-sm mb-2">Certified Group/Laboratories <span class="text-xs text-gray-500 font-normal">| Turlock, CA[cite: 1]</span></h4>
+                <ul class="list-disc list-outside pl-4 space-y-1 text-gray-700 text-sm">
+                    <li>Applied statistical techniques in R to analyze and interpret sample datasets, tracking sample load averages to identify and complete root cause analyses[cite: 1].</li>
+                    <li>Performed qualitative/quantitative ISO-certified nutritional analytical testing with high accuracy and worked with nutritional data FDA submissions[cite: 1].</li>
+                    <li>Authored and validated technical documentation and SOPs for ISO-certified testing (ELISA 2022)[cite: 1].</li>
+                    <li>Translated complex analytical testing data results and deadlines for internal stakeholders and customers[cite: 1].</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-yellow-100/60 py-10 border-t border-yellow-200">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-6">
+                <h2 class="text-2xl font-bold text-gray-900">Featured Projects</h2>
+                <div class="h-[1px] bg-yellow-300 flex-grow"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Project 1 -->
+                <div class="bg-bioCardBg p-5 rounded-xl border border-yellow-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm hover:shadow-md">
+                    <div>
+                        <div class="text-bioTeal text-xs font-mono font-bold mb-1">Python • SQL • Machine Learning[cite: 1]</div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2">Diabetes Prediction in Females</h3>
+                        <p class="text-gray-600 text-sm">Engineered a data cleaning and predictive modeling pipeline using a 100,000-record dataset[cite: 1]. Implemented LogisticRegressionCV with 5-fold cross-validation, achieving an 89% accuracy and an ROC AUC of 0.95[cite: 1].</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-bioCardBg p-5 rounded-xl border border-yellow-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm hover:shadow-md">
+                    <div>
+                        <div class="text-bioAccent text-xs font-mono font-bold mb-1">Metagenomics • Workflow[cite: 1]</div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2">Augment Bioinformatics <span class="text-xs font-normal text-gray-500">(In-Progress)[cite: 1]</span></h3>
+                        <p class="text-gray-600 text-sm">Leading the end-to-end development of a 16S rRNA marker gene metagenomics workflow, benchmarking microbial identification via public sequence datasets[cite: 1].</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-bioCardBg p-5 rounded-xl border border-yellow-200 flex flex-col justify-between hover:-translate-y-1 transition duration-300 shadow-sm hover:shadow-md">
+                    <div>
+                        <div class="text-bioTeal text-xs font-mono font-bold mb-1">R • Linux • STAR • DESeq2[cite: 1]</div>
+                        <h3 class="text-base font-bold text-gray-900 mb-2">P. aeruginosa Expression</h3>
+                        <p class="text-gray-600 text-sm">Developed a repeatable transcriptomic pipeline to analyze datasets under heat shock[cite: 1]. Achieved 99.7% genome alignment accuracy using STAR and isolated 2,259 differentially expressed genes[cite: 1].</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education & Awards Section -->
+    <section class="max-w-5xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+            <div class="flex items-center gap-4 mb-4">
+                <h2 class="text-xl font-bold text-gray-900">Education</h2>
+                <div class="h-[1px] bg-yellow-300 flex-grow"></div>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-bioCardBg p-4 rounded-xl border border-yellow-200/60 shadow-sm">
+                    <h3 class="text-base font-bold text-gray-900">San Diego State University <span class="text-xs text-gray-500 font-normal">| San Diego, CA</span>[cite: 1]</h3>
+                    <p class="text-xs text-bioTeal font-mono font-bold">MS, Bioinformatics and Medical Informatics (May 2027)[cite: 1]</p>
+                    <p class="text-xs text-gray-600 mt-1"><strong>Courses:</strong> Data Science, Bioinformatics, SQL, Biological Data Analysis[cite: 1]</p>
+                </div>
+                <div class="bg-bioCardBg p-4 rounded-xl border border-yellow-200/60 shadow-sm">
+                    <h3 class="text-base font-bold text-gray-900">University of California, Merced <span class="text-xs text-gray-500 font-normal">| Merced, CA</span>[cite: 1]</h3>
+                    <p class="text-xs text-bioAccent font-mono font-bold">BS, Biological Sciences - Human Biology (Aug 2019)[cite: 1]</p>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="flex items-center gap-4 mb-4">
+                <h2 class="text-xl font-bold text-gray-900">Grants & Funding</h2>
+                <div class="h-[1px] bg-yellow-300 flex-grow"></div>
+            </div>
+            <div class="bg-bioCardBg border border-yellow-200 p-4 rounded-xl shadow-sm">
+                <h3 class="text-sm font-bold text-gray-900 mb-1">NextGen Graduate Assistantship[cite: 1]</h3>
+                <p class="text-xs text-gray-600 leading-relaxed">
+                    Sponsored by a US Department of Agriculture (USDA) educational grant for Hispanic Serving Institutions (HSI)[cite: 1]. Part of the National Institute of Food and Agriculture's (NIFA) "From Learning to Leading: Cultivating the Next Generation of Diverse Food and Agriculture Professionals Program"[cite: 1].
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-12 text-center">
+        <h2 class="text-3xl font-extrabold text-gray-900 mb-2">Get In Touch</h2>
+        <p class="text-gray-600 max-w-md mx-auto mb-6 text-sm">
+            I am always open to discussing research collaborations, data architecture challenges, or bioinformatics opportunities.
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-3 text-xs font-mono font-semibold">
+            <a href="mailto:samanthagallegos814@gmail.com" class="px-4 py-2.5 bg-bioAccent text-white hover:bg-blue-800 rounded-lg transition shadow-sm">
+                samanthagallegos814@gmail.com[cite: 1]
+            </a>
+            <span class="text-gray-400 hidden sm:block">|</span>
+            <span class="text-gray-700 bg-yellow-100 px-3 py-2 rounded-md border border-yellow-200">(209) 761-7257[cite: 1]</span>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center text-xs text-gray-400 border-t border-gray-800">
+        <p>&copy; 2026 Samantha Gallegos Perez. Built with Tailwind CSS.[cite: 1]</p>
+    </footer>
+
+</body>
+</html>
